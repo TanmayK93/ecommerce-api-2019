@@ -10,7 +10,7 @@ const config = require("./connect.js");
 const productRoute = require("./routes/product-routes");
 const userRoute = require("./routes/user-routes.js");
 const cartRoute = require("./routes/cart-routes.js");
-const orderRoute = require("./routes/order-routes.js");
+const orderRoute = require("./routes/order-routes");
 const commentRoute = require("./routes/comment-routes.js");
 
 mongoose.Promise = global.Promise;
