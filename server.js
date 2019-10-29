@@ -33,6 +33,6 @@ app.use("/carts", cartRoute);
 app.use("/orders", orderRoute);
 app.use("/comments", commentRoute);
 
-app.listen(PORT, function() {
+app.listen(process.env.PORT || PORT, function() {
   console.log("Server is running on Port:", PORT);
 });
