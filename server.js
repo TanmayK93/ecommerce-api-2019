@@ -12,6 +12,7 @@ const userRoute = require("./routes/user-routes.js");
 const cartRoute = require("./routes/cart-routes.js");
 const orderRoute = require("./routes/order-routes");
 const commentRoute = require("./routes/comment-routes.js");
+const coffeeRoute = require("./routes/coffee-routes.js");
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DB, { useNewUrlParser: true }).then(
@@ -28,6 +29,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use("/posts", productRoute);
+app.use("/coffee", coffeeRoute);
 app.use("/users", userRoute);
 app.use("/carts", cartRoute);
 app.use("/orders", orderRoute);
