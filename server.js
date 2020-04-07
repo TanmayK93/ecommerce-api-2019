@@ -28,7 +28,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use("/posts", productRoute);
+app.use("/products", productRoute);
 app.use("/coffee", coffeeRoute);
 app.use("/users", userRoute);
 app.use("/carts", cartRoute);
